@@ -50,7 +50,15 @@ class MyFrame extends JFrame implements TreeSelectionListener{
     }
 }
 
+public class TreeDemo {
 
+    public static void main(String[] args) {
+        MyFrame frame = new MyFrame();
+        frame.setSize(400, 400);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
 
 
 // Actually in previous code that file directory was not seen so that i made some if else condition and fix it so now see there is no scroll bar so lets add some scroll bar.let see.❤️
