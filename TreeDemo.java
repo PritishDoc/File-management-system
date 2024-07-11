@@ -30,25 +30,7 @@ class MyFrame extends JFrame implements TreeSelectionListener{
                 root.add(new DefaultMutableTreeNode(x.getName()));
             }
         }
-        tree = new JTree(root); // JTree created
-        label = new JLabel("No Files Selected");
-
-        tree.addTreeSelectionListener(this);
-
-        //Adding scroll bar so lets see😍
-        JScrollPane sp=new JScrollPane(tree);
-
-        add(sp, BorderLayout.CENTER);
-        add(label, BorderLayout.SOUTH);
-    }
-
-    @Override
-    public void valueChanged(TreeSelectionEvent e) {
-       // To ignore This exception  i just comment it out🫤
-        //throw new UnsupportedOperationException("Unimplemented method 'valueChanged'");
-        label.setText(e.getPath().toString());
-    }
-}
+       
 
 public class TreeDemo {
 
